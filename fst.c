@@ -25,6 +25,7 @@ main (int argc, char ** argv)
     g_signal_connect_swapped (rect, "button-press-event", 
                               G_CALLBACK (on_press_key), (gpointer ) rect);
     clutter_actor_set_reactive (rect, TRUE);
+    clutter_actor_show_all (stage);
     clutter_main ();
     return 0;
 }
